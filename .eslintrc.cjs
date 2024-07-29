@@ -1,0 +1,46 @@
+module.exports = {
+	root: true,
+	env: { browser: true, es2020: true },
+	extends: [
+		'eslint:recommended',
+		'plugin:react/recommended',
+		'plugin:react/jsx-runtime',
+		'plugin:react-hooks/recommended',
+		'plugin:prettier/recommended',
+		'prettier',
+	],
+	ignorePatterns: ['dist', '.eslintrc.cjs'],
+	parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
+	settings: { react: { version: '18.2' } },
+	plugins: ['react-refresh', 'react', 'prettier', 'tailwindcss', 'prettier-plugin-tailwindcss'],
+	rules: {
+		'react/jsx-no-target-blank': 'off',
+		'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+		'prettier/prettier': [
+			'error',
+			{
+				arrowParens: 'avoid',
+				bracketSameLine: true,
+				bracketSpacing: true,
+				singleQuote: true,
+				trailingComma: 'all',
+				semi: true,
+				tabWidth: 2,
+				useTabs: true,
+				jsxSingleQuote: true,
+				proseWrap: 'preserve',
+				printWidth: 100,
+				htmlWhitespaceSensitivity: 'css',
+			},
+		],
+		'react-hooks/rules-of-hooks': 'error',
+		'react-hooks/exhaustive-deps': 'warn',
+		'tailwindcss/classnames-order': 'warn',
+		'tailwindcss/no-custom-classname': 'off',
+	},
+	settings: {
+		react: {
+			version: 'detect',
+		},
+	},
+};
