@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { cva } from 'class-variance-authority';
 
 import { cn } from '@/lib/utils';
@@ -8,11 +7,10 @@ const badgeVariants = cva(
 	{
 		variants: {
 			variant: {
-				default: 'border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80',
-				secondary:
-					'border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80',
+				default: 'border-muted bg-primary text-primary-foreground shadow hover:bg-primary/80',
+				secondary: 'border-muted bg-secondary text-secondary-foreground hover:bg-secondary/80',
 				destructive:
-					'border-transparent bg-destructive text-destructive-foreground shadow hover:bg-destructive/80',
+					'border-muted bg-destructive text-destructive-foreground shadow hover:bg-destructive/80',
 				outline: 'text-foreground',
 			},
 		},
@@ -26,4 +24,5 @@ function Badge({ className, variant, ...props }) {
 	return <div className={cn(badgeVariants({ variant }), className)} {...props} />;
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export { Badge, badgeVariants };

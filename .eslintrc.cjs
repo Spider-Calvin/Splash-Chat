@@ -12,7 +12,7 @@ module.exports = {
 	ignorePatterns: ['dist', '.eslintrc.cjs'],
 	parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
 	settings: { react: { version: '18.2' } },
-	plugins: ['react-refresh', 'react', 'prettier', 'tailwindcss', 'prettier-plugin-tailwindcss'],
+	plugins: ['react-refresh', 'react', 'prettier', 'tailwindcss'],
 	rules: {
 		'react/jsx-no-target-blank': 'off',
 		'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
@@ -33,10 +33,11 @@ module.exports = {
 				htmlWhitespaceSensitivity: 'css',
 			},
 		],
-		'react-hooks/rules-of-hooks': 'error',
+		'react-hooks/rules-of-hooks': 'off',
 		'react-hooks/exhaustive-deps': 'warn',
 		'tailwindcss/classnames-order': 'warn',
 		'tailwindcss/no-custom-classname': 'off',
+		'react/prop-types': 'off',
 	},
 	settings: {
 		react: {

@@ -1,76 +1,98 @@
-import {
-  RecoilRoot,
-  atom,
-  selector,
-  useRecoilState,
-  useRecoilValue,
-} from 'recoil';
+import { atom } from 'recoil';
 
-const homeData = atom({
-  key: 'homeData', 
-  default: {},
+const chatOpened = atom({
+	key: 'chatOpened',
+	default: {},
 });
 
-const clinicalData = atom({
-  key: 'clinicalData', 
-  default: {},
+const agent = atom({
+	key: 'agent',
+	default: {
+		name: '',
+		email: '',
+		role: '',
+	},
 });
 
-const insuranceDetails = atom({
-  key: 'insuranceDetails', 
-  default: {},
+const openedChatMessages = atom({
+	key: 'openedChatMessages',
+	default: [],
 });
 
-const policies = atom({
-  key: 'policies', 
-  default: {},
+const allPatients = atom({
+	key: 'allPatients',
+	default: [],
+});
+
+const unReadChats = atom({
+	key: 'unReadChats',
+	default: [],
+});
+
+const recentChats = atom({
+	key: 'recentChats',
+	default: [],
 });
 
 const careData = atom({
-  key: 'careData', 
-  default: {},
+	key: 'careData',
+	default: {},
 });
 
 const cSick = atom({
-  key: 'cSick', 
-  default: {},
+	key: 'cSick',
+	default: {},
 });
 
 const mentalData = atom({
-  key: 'mentalData', 
-  default: {},
-})
+	key: 'mentalData',
+	default: {},
+});
 
 const dealsData = atom({
-  key: 'dealsData',
-  default: {}
-})
+	key: 'dealsData',
+	default: {},
+});
 
 const corporate = atom({
-  key: 'corporate',
-  default: {}
-})
+	key: 'corporate',
+	default: {},
+});
 
 const loggedIn = atom({
-  key: 'loggedIn',
-  default: false
-})
+	key: 'loggedIn',
+	default: false,
+});
 
 const claimData = atom({
-  key: 'claimData',
-  default: false
-})
+	key: 'claimData',
+	default: false,
+});
+
+const uploadingImageUrl = atom({
+	key: 'uploadingImageUrl',
+	default: false,
+});
+
+const notification = atom({
+	key: 'notification',
+	default: [],
+});
 
 export {
-  homeData,
-  clinicalData,
-  insuranceDetails,
-  policies,
-  careData,
-  cSick,
-  mentalData,
-  dealsData,
-  corporate,
-  loggedIn,
-  claimData
-}
+	chatOpened,
+	agent,
+	openedChatMessages,
+	uploadingImageUrl,
+	allPatients,
+	careData,
+	cSick,
+	mentalData,
+	dealsData,
+	corporate,
+	loggedIn,
+	claimData,
+	unReadChats,
+	recentChats,
+	notification
+};
