@@ -96,8 +96,8 @@ const Index = () => {
 		<section className='bg-gray-50'>
 			<div className='mx-auto flex h-screen flex-col items-center justify-center px-6 py-8 lg:py-0'>
 				<a className='mb-6 flex items-center font-nunito text-2xl font-bold text-gray-900'>
-					<img className='mr-2 h-8 w-8' src='/logo.png' alt='logo' />
-					Circle Health
+					<img className='mr-2 h-8 w-8' src='/splashLogo.png' alt='logo' />
+					Splash Chat
 				</a>
 				<div className='w-full max-w-md rounded-lg bg-white shadow md:mt-0 xl:p-0'>
 					<div className='space-y-4 p-6 sm:p-8 md:space-y-6'>
@@ -196,7 +196,7 @@ const Index = () => {
 							) : null}
 
 							<p className='text-center text-sm font-light text-gray-500'>
-								Copyright © Circle Health, Version: 1.0.0
+								Copyright © spider-calvin, Version: 1.0.0
 							</p>
 						</form>
 					</div>

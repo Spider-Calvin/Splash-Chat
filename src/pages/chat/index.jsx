@@ -612,16 +612,11 @@ function MailDisplay() {
 					<a
 						href='#'
 						className='dark: mb-2 flex items-center font-nunito text-2xl font-bold text-gray-900 text-muted-foreground'>
-						<img className='bg-whit mr-2 h-8 w-8 dark:hidden' src='/logo.png' alt='logo' />
-						<img
-							className='bg-whit mr-2 hidden h-8 w-8 dark:block'
-							src='https://circlehealth-assets.s3.ap-south-1.amazonaws.com/ch-logo-white.png'
-							alt='logo'
-						/>
-						Circle Health
+						<img className='bg-whit mr-2 h-8 w-8' src='/splashLogo.png' alt='logo' />
+						Splash Chat
 					</a>
 					<p className='text-center text-sm font-light text-muted-foreground'>
-						Copyright © Circle Health, Version: 1.0.0
+						Copyright © spider-calvin, Version: 1.0.0
 					</p>
 				</div>
 			)}
